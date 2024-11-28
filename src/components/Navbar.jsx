@@ -5,7 +5,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import styled from "@emotion/styled";
-import "../styles/navbar.css"
 import gsap from "gsap";
 
 const DrawerHeader = styled('div')(({ theme }) => ({
