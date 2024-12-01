@@ -8,3 +8,17 @@
   --secondary-color: ""
 }
 
+@media (max-width: 700px) {
+  #projectcard{
+    flex-wrap: wrap;
+  }
+
+  #projectcards{
+    padding: 5rem;
+    width: 90%;
+  }
+
+  #blogcard {
+    flex-direction: column;
+  }
+}

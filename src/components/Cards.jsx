@@ -10,11 +10,12 @@ import {
   StorageOutlined,
 } from "@mui/icons-material";
 
+
 // eslint-disable-next-line react/prop-types
 const Cards = ({ skill }) => {
   return (
     <Card
-      sx={{ maxWidth: 345, backgroundColor: "secondary.main", color: " #fff" }}
+      sx={{ maxWidth: 345, backgroundColor: "secondary.main", color: " #fff", margin: "20px" }}
     >
       <CardHeader
         sx={{
@@ -22,7 +23,11 @@ const Cards = ({ skill }) => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          minWidth: "400px"
+          width:{
+            sm:"300px",
+            md: "400px",
+            xl: "400px"
+          }
         }}
         title={
           <Box

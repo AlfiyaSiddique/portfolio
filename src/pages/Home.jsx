@@ -79,7 +79,7 @@ const Home = () => {
 
        <Box sx={{margin: "4rem",}} id="Skills">
        <SectionTitle title={"Skills"}/>
-       <Box sx={{display: "flex", justifyContent: "space-around"}}>
+       <Box sx={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
           {Skills.map((item, index)=>{
               return <Cards key={index} skill={item}/>
           })}
@@ -136,7 +136,7 @@ const Home = () => {
 
        <Box sx={{ padding: "4rem", backgroundColor: "secondary.main", color: "#fff"}} id="Projects">
        <SectionTitle title={"Projects"}/>
-        <Box sx={{display: "flex", justifyContent: "space-around", gap: "30px", position: "relative"}}>
+        <Box sx={{display: "flex", justifyContent: "space-around", gap: "30px", position: "relative"}} id="projectcard">
             {app.map((webapp, index)=>{
               return <Projects key={index} app={webapp} />
             })

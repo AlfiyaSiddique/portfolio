@@ -12,8 +12,10 @@ const Blogs = ({blog}) => {
         color: "#fff",
         padding: "2rem",
         borderRadius: "8px",
-        margin: "2rem"
+        margin: "2rem",
+        flexWrap: "wrap"
       }}
+      id="blogcard"
     >
       {/* Left Section: Image */}
       <CardMedia

@@ -8,7 +8,7 @@ const Projects = ({app}) => {
 
   return (
     <Box sx={{  width: "50%",
-          height: "450px"}}>
+          height: "450px"}} id="projectcards">
       <Box
         sx={{
           position: "relative",
@@ -50,7 +50,7 @@ const Projects = ({app}) => {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            zIndex: 2, // Content stays above the background
+            zIndex: 2, 
           }}
         ></Box>
       </Box>
