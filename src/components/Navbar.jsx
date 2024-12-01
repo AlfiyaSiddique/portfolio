@@ -41,9 +41,19 @@ const Navbar = () => {
 
     const menuItems = ['Home','Skills', 'Blog', 'Projects']
 
+    const handleClose = (sectionId) => {
+  
+      if (sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' }); // Scrolls smoothly
+        }
+      }
+    };
+
   return (
     <Box sx={{ flexGrow: 1}}>
-    <AppBar position="static" sx={{backgroundColor: "secondary.light", padding: "0 5rem 0"}}>
+    <AppBar position="static" sx={{backgroundColor: "secondary.light", padding: "0 5rem 0", boxShadow: "none", color: "#fff"}}>
         <Toolbar>
             <Typography variant="h5" sx={({flexGrow: 1, position: "relative", top: "0", zIndex: 2, fontWeight: "bolder", fontFamily: "Noto Sans KR, sans-serif"})}>
              Alfiya Siddique</Typography>
@@ -52,7 +62,6 @@ const Navbar = () => {
           height: 50, 
           borderRadius: "50%",
           backgroundColor: "secondary.main",
-          opacity: ".5",
           position: "absolute",
           top: "-10px",
           left: "55px",
@@ -64,11 +73,11 @@ const Navbar = () => {
                 <>
                     {menuItems.map((item)=>(
                         <MenuItem key={item} sx={{ 
-    fontSize: "1.4rem", margin: "0 20px 0"}}>
+    fontSize: "1.4rem", margin: "0 20px 0"}} onClick={()=>handleClose(item)}>
                         {item}
                         </MenuItem>
                     ))}
-                    <Button color="inherit" variant="outlined" sx={{fontSize: "1.2rem"}}>
+                    <Button color="inherit" variant="outlined" sx={{fontSize: "1.2rem"}} onClick={()=>handleClose("footer")}>
               Hire Me
             </Button>
                 </>
