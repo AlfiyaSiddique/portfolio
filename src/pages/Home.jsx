@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 import SpecialSkills from "../components/Specialskill";
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import SectionTitle from "../components/SectionTitle";
 import animation from "../assets/animation.gif"
 import {Skills} from "../data/Skills.js"
