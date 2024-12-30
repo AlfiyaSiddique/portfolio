@@ -3,14 +3,14 @@ import tastytrails from "../assets/TastyTrails.jpg"
 
 export const Projects = [
     {
-      img: pf,
+      img: tastytrails,
       title: "TastyTrails",
       description: "An application to connect with people over food",
       techstack: "MERN",
       link: "https://delightful-daifuku-a9f6ea.netlify.app/"
     },
     {
-        img: tastytrails,
+        img: pf,
         title: "PF Manager",
         description: "A Sponsored project by a government institute to manage provident fund",
         techstack: "MERN",

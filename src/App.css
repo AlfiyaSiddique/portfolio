@@ -8,9 +8,17 @@
   --secondary-color: ""
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+  #Skills, #SpecialSkills, #projectcards, #Blog{
+     margin: 1rem;
+  }
+
+  #Blog{
+    margin-top: 8rem;
+  }
   #projectcard{
     flex-wrap: wrap;
+    padding: 2rem;
   }
 
   #projectcards{
@@ -21,4 +29,14 @@
   #blogcard {
     flex-direction: column;
   }
+
+  #SpecialSkills{
+    flex-direction: column;
+  }
+
+  #specialskilltext{
+     font-size: 2rem;
+     text-align: center;
+  }
+
 }

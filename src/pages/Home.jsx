@@ -97,9 +97,11 @@ const Home = () => {
         flexWrap: "wrap", // Ensures it wraps on smaller screens
         gap: "2rem",
       }}
+
+    id={"SpecialSkills"}
     >
       {/* Text Section */}
-      <Box sx={{ flex: 1, minWidth: "300px" }}>
+      <Box sx={{ flex: 1, minWidth: "300px" }} id="specialskilltext">
         <Typography
           sx={{
             fontSize: "4rem",

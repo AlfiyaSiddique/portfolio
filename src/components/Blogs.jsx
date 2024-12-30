@@ -15,6 +15,10 @@ const Blogs = ({blog}) => {
         margin: "2rem",
         flexWrap: "wrap"
       }}
+
+      md={{
+        flexDirection: "row"
+      }}
       id="blogcard"
     >
       {/* Left Section: Image */}
